@@ -22,10 +22,10 @@ Example:
 
 This plugin provides a function that reads `~/.config/keystrokes.txt` and displays in a floating window.
 
-If you add the following autocmd, it'll call the `:Keystrokes` command at your vim's checktime interval.
+If you add the following autocmd, it'll call the `:KeystrokesStart` command at your vim's checktime interval.
 
 ```
-autocmd CursorHold <buffer> Keystrokes
+autocmd CursorHold <buffer> KeystrokesStart
 ```
 
 You'll need to patch vim/neovim for this to work.

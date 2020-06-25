@@ -15,7 +15,8 @@ if !exists('g:keystrokes_floating_window_scaling_factor')
   let g:keystrokes_floating_window_scaling_factor = 0.9
 endif
 
-command! Keystrokes lua require'keystrokes'.keystrokes()
+command! KeystrokesStart lua require'keystrokes'.start_keystrokes()
+command! KeystrokesStop lua require'keystrokes'.stop_keystrokes()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
