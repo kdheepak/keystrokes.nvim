@@ -20,13 +20,15 @@ Example:
 ./build/bin/nvim -W ~/.config/keystrokes.txt src/nvim/main.c
 ```
 
-This plugin provides a function that reads `~/.config/keystrokes.txt` and displays in a floating window.
+This plugin provides a function that reads `~/.config/keystrokes.txt` and displays all new changes to the file in a floating window.
 
 If you add the following autocmd, it'll call the `:KeystrokesStart` command at your vim's checktime interval.
 
 ```
 autocmd CursorHold <buffer> KeystrokesStart
 ```
+
+This will show all recent keystrokes in a neovim floating window.
 
 You'll need to patch vim/neovim for this to work.
 
