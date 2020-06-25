@@ -2,6 +2,8 @@
 
 Show keystrokes in vim.
 
+This package is a proof of concept.
+
 ![](https://user-images.githubusercontent.com/1813121/85680593-adbe6e00-b687-11ea-8fce-2f84434f27c0.gif)
 
 Add this plugin:
