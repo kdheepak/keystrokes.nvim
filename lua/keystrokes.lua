@@ -4,12 +4,12 @@ local fn = vim.fn
 
 print("Loaded successfully")
 
-local function monitor_keystrokes()
+local function keystrokes()
 end
 
 local function open_floating_window()
 
-    local floating_window_scaling_factor = vim.g.monitor_keystrokes_floating_window_scaling_factor
+    local floating_window_scaling_factor = vim.g.keystrokes_floating_window_scaling_factor
 
     if type(floating_window_scaling_factor) == 'table' then
         floating_window_scaling_factor = floating_window_scaling_factor[false]
@@ -61,12 +61,12 @@ local function open_floating_window()
     -- create file window
     local file_window = api.nvim_open_win(file_buffer, true, opts)
 
-    vim.bo[file_buffer].filetype = 'monitor_keystrokes'
+    vim.bo[file_buffer].filetype = 'keystrokes'
 
     vim.cmd('setlocal nocursorcolumn')
-    vim.cmd('set winblend=' .. vim.g.monitor_keystrokes_floating_window_winblend)
+    vim.cmd('set winblend=' .. vim.g.keystrokes_floating_window_winblend)
 end
 
 return {
-    monitor_keystrokes = monitor_keystrokes,
+    keystrokes = keystrokes,
 }

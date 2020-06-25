@@ -1,4 +1,4 @@
-# keystroke.vim
+# keystrokes.vim
 
 Show keystrokes in vim.
 
@@ -26,4 +26,3 @@ https://github.com/vim/vim/blob/7acde51832f383f9a6d2e740cd0420b433ea841a/src/mai
 See this gist for reference.
 
 https://gist.github.com/kana/4202311
-
