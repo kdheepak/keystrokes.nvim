@@ -68,7 +68,7 @@ end
 
 local function stop_keystrokes()
     if file_window == nil then return end
-    api.nvim_win_close(file_window)
+    api.nvim_win_close(file_window, true)
     file_window = nil
 end
 
