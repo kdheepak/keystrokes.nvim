@@ -2,6 +2,8 @@
 local api = vim.api
 local fn = vim.fn
 
+local file_window = nil
+
 local function keystrokes()
     local floating_window_scaling_factor = vim.g.keystrokes_floating_window_scaling_factor
 

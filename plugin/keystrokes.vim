@@ -17,6 +17,8 @@ endif
 
 command! Keystrokes lua require'keystrokes'.keystrokes()
 
+autocmd CursorHold <buffer> Keystrokes
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let &cpoptions = s:save_cpo
