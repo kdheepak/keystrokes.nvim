@@ -20,7 +20,7 @@ Example:
 
 This plugin provides a function that reads `~/.config/keystrokes.txt` and displays in a floating window.
 
-If you add the following autocmd, it'll call Keystrokes every time your cursor stops moving.
+If you add the following autocmd, it'll call the `:Keystrokes` command at your vim's checktime interval.
 
 ```
 autocmd CursorHold <buffer> Keystrokes
