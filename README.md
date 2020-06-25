@@ -1,4 +1,6 @@
-# Cast keystrokes in vim
+# keystroke.vim
+
+Show keystrokes in vim.
 
 You'll need to add this line to neovim.
 
