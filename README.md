@@ -4,6 +4,28 @@ Show keystrokes in vim.
 
 ![](https://user-images.githubusercontent.com/1813121/85680593-adbe6e00-b687-11ea-8fce-2f84434f27c0.gif)
 
+Add this plugin:
+
+```
+Plug 'kdheepak/keystrokes.nvim'
+```
+
+Start `vim` with the `-W` flag.
+
+Example:
+
+```
+./build/bin/nvim -W ~/.config/keystrokes.txt src/nvim/main.c
+```
+
+This plugin provides a function that reads `~/.config/keystrokes.txt` and displays in a floating window.
+
+If you add the following autocmd, it'll call Keystrokes every time your cursor stops moving.
+
+```
+autocmd CursorHold <buffer> Keystrokes
+```
+
 You'll need to patch vim/neovim for this to work.
 
 ```
