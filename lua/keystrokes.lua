@@ -4,7 +4,23 @@ local fn = vim.fn
 
 print("Loaded successfully")
 
+
+-- see if the file exists
+local function file_exists(file)
+  local f = io.open(file, "rb")
+  if f then f:close() end
+  return f ~= nil
+end
+
 local function keystrokes()
+    file = "~/.config/keystrokes.txt"
+    if not file_exists(file) then return {} end
+    local file_buffer = open_floating_window()
+    local lines = {}
+    for line in io.lines(file) do
+        lines[#lines + 1] = line
+    end
+    api.nvim_buf_set_lines(border_buffer, 0, -1, true, lines)
 end
 
 local function open_floating_window()
@@ -65,6 +81,7 @@ local function open_floating_window()
 
     vim.cmd('setlocal nocursorcolumn')
     vim.cmd('set winblend=' .. vim.g.keystrokes_floating_window_winblend)
+    return file_buffer
 end
 
 return {

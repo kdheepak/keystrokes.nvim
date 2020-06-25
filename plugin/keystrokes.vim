@@ -1,4 +1,3 @@
-
 scriptencoding utf-8
 
 if exists('g:loaded_keystrokes_vim') | finish | endif
