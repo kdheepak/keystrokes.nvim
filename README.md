@@ -47,6 +47,18 @@ In vim, you'll have to add it to this line:
 
 https://github.com/vim/vim/blob/7acde51832f383f9a6d2e740cd0420b433ea841a/src/main.c#L2582
 
-See this gist for reference.
+### References
+
+See this gist for reference for the patch:
 
 https://gist.github.com/kana/4202311
+https://github.com/nelstrom/macvim/commit/c65e7e650b806682152681c58078d29cb1904bfe
+
+See vimsplain:
+
+https://github.com/pafcu/vimsplain
+
+See vimprint for inspiration:
+
+https://github.com/nelstrom/vimprint
+http://vimcasts.org/blog/2013/05/vimprint---a-vim-keystroke-parser/
