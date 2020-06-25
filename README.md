@@ -1,6 +1,6 @@
-# keystrokes.vim
+# keystrokes.nvim
 
-Show keystrokes in vim.
+Show keystrokes in nvim.
 
 This package is a proof of concept.
 
