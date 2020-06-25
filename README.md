@@ -2,7 +2,9 @@
 
 Show keystrokes in vim.
 
-You'll need to add this line to neovim.
+![](https://user-images.githubusercontent.com/1813121/85680593-adbe6e00-b687-11ea-8fce-2f84434f27c0.gif)
+
+You'll need to patch vim/neovim for this to work.
 
 ```
 diff --git a/src/nvim/main.c b/src/nvim/main.c
